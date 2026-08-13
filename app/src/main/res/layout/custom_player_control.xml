@@ -66,8 +66,8 @@
                 android:id="@id/exo_position"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="01:24"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:text="00:00" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -79,20 +79,13 @@
                 android:id="@id/exo_duration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10:35"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:text="00:00" />
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
-
-            <ImageButton
-                android:id="@id/exo_volume"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="?android:attr/selectableItemBackground"
-                android:src="@android:drawable/ic_lock_silent_mode_off" />
 
             <ImageButton
                 android:id="@id/exo_settings"
@@ -106,12 +99,6 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp" />
         </LinearLayout>
-
-        <com.google.android.material.slider.Slider
-            android:id="@id/exo_progress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone" />
 
         <androidx.media3.ui.DefaultTimeBar
             android:id="@id/exo_progress"
