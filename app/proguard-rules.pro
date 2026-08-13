@@ -1,0 +1,2 @@
+-keep class com.videoapi.app.** { *; }
+-keep class androidx.media3.** { *; }
