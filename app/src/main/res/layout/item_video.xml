@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="live feed / بث مباشر"
+            android:textColor="#FFFFFF"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تم ارسال هذا البث في توقيت"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/viewsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عدد المشاهدات"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عنوان الفيديو"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/urlText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="https://"
+            android:textSize="10sp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
