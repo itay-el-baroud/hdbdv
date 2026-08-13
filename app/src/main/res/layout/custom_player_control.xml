@@ -15,39 +15,39 @@
 
         <ImageButton
             android:id="@id/exo_prev"
-            style="@style/ExoMediaButton.Previous"
             android:layout_width="48dp"
-            android:layout_height="48dp" />
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
 
         <ImageButton
             android:id="@id/exo_rew"
-            style="@style/ExoMediaButton.Rewind"
             android:layout_width="48dp"
-            android:layout_height="48dp" />
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
 
         <ImageButton
             android:id="@id/exo_play"
-            style="@style/ExoMediaButton.Play"
             android:layout_width="64dp"
-            android:layout_height="64dp" />
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
 
         <ImageButton
             android:id="@id/exo_pause"
-            style="@style/ExoMediaButton.Pause"
             android:layout_width="64dp"
-            android:layout_height="64dp" />
+            android:layout_height="64dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
 
         <ImageButton
             android:id="@id/exo_ffwd"
-            style="@style/ExoMediaButton.FastForward"
             android:layout_width="48dp"
-            android:layout_height="48dp" />
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
 
         <ImageButton
             android:id="@id/exo_next"
-            style="@style/ExoMediaButton.Next"
             android:layout_width="48dp"
-            android:layout_height="48dp" />
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
     </LinearLayout>
 
     <LinearLayout
@@ -66,8 +66,8 @@
                 android:id="@id/exo_position"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:text="00:00" />
+                android:text="00:00"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -79,8 +79,8 @@
                 android:id="@id/exo_duration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:text="00:00" />
+                android:text="00:00"
+                android:textColor="#FFFFFF" />
 
             <View
                 android:layout_width="0dp"
@@ -88,16 +88,10 @@
                 android:layout_weight="1" />
 
             <ImageButton
-                android:id="@id/exo_settings"
-                style="@style/ExoMediaButton.Settings"
-                android:layout_width="32dp"
-                android:layout_height="32dp" />
-
-            <ImageButton
                 android:id="@id/exo_fullscreen"
-                style="@style/ExoMediaButton.Fullscreen"
                 android:layout_width="32dp"
-                android:layout_height="32dp" />
+                android:layout_height="32dp"
+                android:background="?attr/selectableItemBackgroundBorderless" />
         </LinearLayout>
 
         <androidx.media3.ui.DefaultTimeBar
