@@ -1,6 +1,5 @@
 package com.videoapi.app.ui
 
-import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -12,15 +11,14 @@ import com.videoapi.app.R
 class PlayerActivity : AppCompatActivity() {
 
     private var player: ExoPlayer? = null
-    private var isFullscreen = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_player)
 
-        val url = intent.getStringExtra("url")?: ""
+        val url = intent.getStringExtra("url") ?: ""
         val isLive = intent.getBooleanExtra("isLive", false)
-        val timestamp = intent.getStringExtra("timestamp")?: ""
+        val timestamp = intent.getStringExtra("timestamp") ?: ""
         val views = intent.getIntExtra("views", 0)
 
         val playerView = findViewById<PlayerView>(R.id.playerView)
@@ -40,26 +38,12 @@ class PlayerActivity : AppCompatActivity() {
 
         player = ExoPlayer.Builder(this).build()
         playerView.player = player
-        playerView.setShowNextButton(true)
-        playerView.setShowPreviousButton(true)
 
-        val mediaItem = MediaItem.fromUri(url)
-        player?.setMediaItem(mediaItem)
-        player?.prepare()
-        player?.play()
-
-        playerView.findViewById<View>(R.id.exo_fullscreen)?.setOnClickListener {
-            toggleFullscreen()
-        }
-    }
-
-    private fun toggleFullscreen() {
-        if (isFullscreen) {
-            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-            isFullscreen = false
-        } else {
-            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-            isFullscreen = true
+        if (url.isNotEmpty()) {
+            val mediaItem = MediaItem.fromUri(url)
+            player?.setMediaItem(mediaItem)
+            player?.prepare()
+            player?.play()
         }
     }
 
