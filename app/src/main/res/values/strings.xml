@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">video api</string>
+    <string name="live">البث الحي</string>
+    <string name="recorded">التسجيلات</string>
+    <string name="camera">كاميرا</string>
+    <string name="screen">شاشة</string>
+</resources>
